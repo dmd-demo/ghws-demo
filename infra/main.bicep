@@ -88,7 +88,7 @@ module storage './core/storage/storage-account.bicep' = {
   name: 'storage'
   scope: resourceGroup(resourceGroupName)
   params: {
-    name: !empty(storageAccountName) ? storageAccountName : '${abbrs.storageStorageAccounts}${resourceToken}Test'
+    name: !empty(storageAccountName) ? storageAccountName : '${abbrs.storageStorageAccounts}${resourceToken}test'
     location: location
     tags: tags
     containers: [{name: deploymentStorageContainerName}, {name: 'snippets'}]
